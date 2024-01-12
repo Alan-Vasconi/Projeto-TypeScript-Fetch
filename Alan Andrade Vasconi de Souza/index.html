@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    
+    <link rel="icon" href="imagens/ilustracao-vetorial-plana-de-mascote-de-rosto-de-leao_949611-2371-removebg-preview.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="tamanho_maximo_img">
+            <img src="imagens/logo_final.png" height="160" style="border: 0px solid black">
+        </div>
+        <nav id="links" align="center">
+            <h4 class="links">
+                <span class="links">
+                    <a href="index.html" class="links">Login</a>
+                    <a href="manual.html" class="links">Manual de Uso</a>
+                    <a href="contatos_seguro.html" class="links">Contatos</a>
+                </span>
+            </h4>
+        </nav>
+    </header>
+    
+    <main id="conteudo">
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="input-container">
+                <i id="keyIcon" class="fa-solid fa-key fa-beat-fade" style="padding-right: 5px;"></i>
+                <input type="text" id="login-username" placeholder="Email do usuário" required>
+            </div>
+            <div class="input-container">
+                <i id="login-senha" class="fa-solid fa-lock fa-beat-fade"  style="padding-right:5px;"></i> 
+                <input type="password" id="login-password" placeholder="Senha" required>
+            </div>
+            <br><br>
+            <button id="login">Login</button>
+            <button id="fazer_registro">Registrar</button>
+        </form>
+        
+        <div id="resposta"></div>
+    </main>
+    
+    <script type="module" src="login.js"></script>
+</body>
+</html>
